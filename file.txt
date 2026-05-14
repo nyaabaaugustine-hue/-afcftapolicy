@@ -1,0 +1,31 @@
+afta-site/
+├── src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   └── input.tsx
+│   │   ├── Header.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── CTASection.tsx
+│   │   ├── BlogSection.tsx
+│   │   └── Footer.tsx
+│   └── pages/
+│       ├── HomePage.tsx
+│       ├── AboutPage.tsx
+│       ├── MembershipPage.tsx
+│       ├── BusinessExportClubPage.tsx
+│       ├── ContactPage.tsx
+│       ├── RegisterPage.tsx
+│       ├── EventsPage.tsx
+│       ├── BlogPage.tsx
+│       ├── BlogPostPage.tsx
+│       ├── GalleryPage.tsx
+│       ├── FAQPage.tsx
+│       ├── TeamPage.tsx
+│       └── PartnersPage.tsx
