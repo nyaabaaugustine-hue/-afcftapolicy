@@ -1,81 +1,72 @@
-import { useState } from "react";
 import React from "react";
-
-const ArrowRightIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-    <path d="m16 6-1.4 1.4 1.6 1.6H0v2h16.2l-1.6 1.6L16 14l4-4z"/>
-  </svg>
-);
-
-const PlayIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-  </svg>
-);
-
-const HandshakeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-  </svg>
-);
-
-const OpenSourceIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-  </svg>
-);
 
 const ServicesCarousel = () => {
   const services = [
     {
-      icon: <PlayIcon />,
       title: "Media sensitization and advocacy",
-      description: "AfCFTA policy network has extensively done media and public advocacy through print, electronic...",
-      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716829/fd2ce89b-3a0e-473d-b42f-d13f1c4eef29-300x212_x4qqnw.jpg"
+      description: "AfCFTA policy network has extensively done media and public advocacy through print, electronic....",
+      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716829/fd2ce89b-3a0e-473d-b42f-d13f1c4eef29-300x212_x4qqnw.jpg",
+      bg: "bg-red-600",
+      icon: (
+        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l4 2A1 1 0 0020 14V8a1 1 0 00-1.447-.894l-4 2zM4 14a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/>
+        </svg>
+      ),
     },
     {
-      icon: <HandshakeIcon />,
       title: "Institutional partnerships",
-      description: "AfCFTA policy network has done extensive institutional networking with CSO'S, private sector...",
-      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716831/afcfta-institutional-partnership-384x256_negvck.jpg"
+      description: "AfCFTA policy network has done extensive institutional networking with CSO's, private sector....",
+      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716831/afcfta-institutional-partnership-384x256_negvck.jpg",
+      bg: "bg-amber-500",
+      icon: (
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      ),
     },
     {
-      icon: <OpenSourceIcon />,
       title: "Ongoing flagship programs",
-      description: "The hope project is about acquiring land to build centre of Excellence in 1 trade, free trade...",
-      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716830/slide111_ptbh1n.jpg"
+      description: "The hope project is about acquiring land to build centre of Excellence in I trade, free trade....",
+      image: "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778716830/slide111_ptbh1n.jpg",
+      bg: "bg-red-600",
+      icon: (
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      ),
     },
   ];
 
   return (
-    <div className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-4 py-0">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
-            >
+            <div key={index} className="group relative overflow-hidden cursor-pointer">
               {/* Background Image */}
               <div className="h-64 relative">
-                <img 
-                  src={service.image} 
+                <img
+                  src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-slate-900/60 group-hover:bg-slate-900/70 transition-colors"></div>
               </div>
-              
-              {/* Overlay Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <div className="text-white mb-4 opacity-80 group-hover:opacity-100 transition-opacity">
-                  {service.icon}
-                </div>
-                <h3 className="text-white text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-300 text-sm mb-4 line-clamp-2">{service.description}</p>
-                <a href="#" className="text-amber-400 font-medium text-sm flex items-center gap-2 hover:text-amber-300 transition-colors">
+
+              {/* Icon Badge */}
+              <div className={`absolute top-6 left-6 w-14 h-14 ${service.bg} flex items-center justify-center`}>
+                {service.icon}
+              </div>
+
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-white text-lg font-bold mb-2 leading-tight">{service.title}</h3>
+                <p className="text-gray-300 text-sm mb-4 leading-relaxed">{service.description}</p>
+                <a href="#" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase px-4 py-2 transition-colors">
                   Read more
-                  <ArrowRightIcon />
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
                 </a>
               </div>
             </div>

@@ -1,29 +1,23 @@
 import React from "react";
 
+const LOGO_URL = "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778750984/logo-afcfta-policy-network_oyf0rb.png";
+
 interface AboutSectionProps {
   onNavigate: (page: string) => void;
 }
 
 const AboutSection = ({ onNavigate }: AboutSectionProps) => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Section label */}
-        <div className="text-center mb-2">
-          <span className="text-amber-500 text-sm font-medium uppercase tracking-widest">— About Us —</span>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-12 items-center mt-8">
-          {/* Left - Logo */}
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+          {/* Left - Real Logo */}
           <div className="flex-shrink-0 flex flex-col items-center">
-            <div className="w-40 h-40 rounded-full border-4 border-amber-500 flex items-center justify-center bg-slate-900 shadow-xl">
-              <div className="text-center">
-                <div className="text-amber-500 font-extrabold text-2xl tracking-widest leading-tight">APN</div>
-                <div className="text-white text-[9px] font-medium tracking-wider leading-tight mt-1">
-                  AfCFTA<br />Policy Network
-                </div>
-              </div>
-            </div>
+            <img
+              src={LOGO_URL}
+              alt="AfCFTA Policy Network"
+              className="w-48 h-auto object-contain"
+            />
           </div>
 
           {/* Center - Text */}
@@ -40,27 +34,27 @@ const AboutSection = ({ onNavigate }: AboutSectionProps) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <h4 className="text-gray-900 font-bold text-base">Our Values</h4>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed pl-8">
+                <p className="text-gray-500 text-sm leading-relaxed pl-7">
                   Collaboration, Advocacy Focus, Inclusivity, Integrity, Innovation
                 </p>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <h4 className="text-gray-900 font-bold text-base">Growth</h4>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed pl-8">
+                <p className="text-gray-500 text-sm leading-relaxed pl-7">
                   A wider policy network with a globally-relevant, continental perspective.
                 </p>
               </div>

@@ -1,13 +1,13 @@
 import React from "react";
+
+const LOGO_URL = "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778750984/logo-afcfta-policy-network_oyf0rb.png";
+
 export default function HonoraryMembershipPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative h-64 md:h-80 bg-gray-900">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"></div>
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-gradient-to-br from-amber-500/30 to-green-500/30"></div>
-        </div>
+      <section className="relative h-64 md:h-80 bg-slate-900">
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900"></div>
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Honorary Membership Registration</h1>
@@ -28,14 +28,7 @@ export default function HonoraryMembershipPage() {
             <div className="lg:w-1/2">
               {/* Logo */}
               <div className="mb-8">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <circle cx="12" cy="12" r="10" opacity="0.3" />
-                    </svg>
-                  </div>
-                  <span className="text-amber-500 font-bold text-xl">AfCFTA POLICY NETWORK</span>
-                </div>
+                <img src={LOGO_URL} alt="AfCFTA Policy Network" className="h-14 w-auto object-contain" />
               </div>
 
               {/* Title */}
@@ -46,14 +39,12 @@ export default function HonoraryMembershipPage() {
                 </div>
               </div>
 
-              {/* Introduction */}
               <div className="mb-8">
                 <p className="text-gray-700 leading-relaxed">
                   The Executive Council may from time to time admit Honorary Members pursuant to Regulation 12 and the Honorary Member so admitted shall have the prescribed rights under the Regulations.
                 </p>
               </div>
 
-              {/* Values Section */}
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
@@ -67,12 +58,9 @@ export default function HonoraryMembershipPage() {
                   <li>Foster partnership and collaboration towards the promotion of free trade within Africa.</li>
                   <li>Embrace diversity of individuals, ideas, and expressions.</li>
                 </ol>
-                <p className="text-gray-700 mt-4 font-medium">
-                  Exercise stewardship of the AfCFTA-PN global community
-                </p>
+                <p className="text-gray-700 mt-4 font-medium">Exercise stewardship of the AfCFTA-PN global community</p>
               </div>
 
-              {/* Resignation/Exclusion Section */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
@@ -80,10 +68,7 @@ export default function HonoraryMembershipPage() {
                   </svg>
                   Resignation or Exclusion of Members
                 </h3>
-                <p className="text-gray-700 mb-4">
-                  In furtherance of Regulation 13 the following procedures shall apply:
-                </p>
-                
+                <p className="text-gray-700 mb-4">In furtherance of Regulation 13 the following procedures shall apply:</p>
                 <div className="mb-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Exclusion of Membership</h4>
                   <ol className="list-decimal list-inside space-y-2 text-gray-600 text-sm">
@@ -91,16 +76,13 @@ export default function HonoraryMembershipPage() {
                     <li>The member shall be informed of the proposed resolution and the timeframe for implementation.</li>
                   </ol>
                 </div>
-
                 <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm mb-4">
                   <li>Where the proposed resolution is not amenable to the member or the member fails to implement the recommendations within a specified timeframe, the member shall be excluded and duly informed.</li>
                 </ul>
-
                 <ol className="list-decimal list-inside space-y-2 text-gray-600 text-sm" start={3}>
                   <li>There shall be no refund of subscription fees to the affected person upon exclusion from membership.</li>
                   <li>Where a member fails to pay subscription fees on or before the 30th day of March of each year, the member shall be deemed to have been excluded until payment is made.</li>
                 </ol>
-
                 <div className="mt-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Resignation of Membership:</h4>
                   <ol className="list-decimal list-inside space-y-2 text-gray-600 text-sm">
@@ -114,15 +96,12 @@ export default function HonoraryMembershipPage() {
             {/* Right - Registration CTA */}
             <div className="lg:w-1/2">
               <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 sticky top-24">
-                {/* Title */}
                 <div className="mb-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-1 bg-amber-500 rounded"></div>
                     <h2 className="text-2xl font-bold text-gray-900">Register to become a Member Now.</h2>
                   </div>
                 </div>
-
-                {/* Benefits */}
                 <div className="mb-8">
                   <h4 className="font-semibold text-gray-900 mb-4">Honorary Membership Benefits:</h4>
                   <ul className="space-y-3">
@@ -142,21 +121,13 @@ export default function HonoraryMembershipPage() {
                     ))}
                   </ul>
                 </div>
-
-                {/* CTA Button */}
                 <button className="w-full bg-amber-500 hover:bg-amber-600 text-white py-4 rounded font-medium uppercase tracking-wide transition-colors flex items-center justify-center gap-2">
                   Register Now
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
-
-                {/* Additional Info */}
-                <p className="text-center text-gray-500 text-sm mt-4">
-                  Contact us for more information about Honorary Membership
-                </p>
-
-                {/* Contact Info */}
+                <p className="text-center text-gray-500 text-sm mt-4">Contact us for more information about Honorary Membership</p>
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <div className="flex items-center gap-3 mb-3">
                     <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
