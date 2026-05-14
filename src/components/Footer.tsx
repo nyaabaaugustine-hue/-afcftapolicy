@@ -1,5 +1,7 @@
 import React from "react";
 
+const LOGO_URL = "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778750984/logo-afcfta-policy-network_oyf0rb.png";
+
 interface FooterProps {
   onNavigate: (page: string) => void;
 }
@@ -12,16 +14,12 @@ const Footer = ({ onNavigate }: FooterProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About Column */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-amber-500 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-amber-500 font-bold text-sm">AfCFTA</h3>
-                <p className="text-amber-400 text-xs tracking-wider">POLICY NETWORK</p>
-              </div>
+            <div className="mb-5">
+              <img
+                src={LOGO_URL}
+                alt="AfCFTA Policy Network"
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               AfCFTA policy network was established in 2019 as the lead and largest

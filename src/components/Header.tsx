@@ -1,5 +1,7 @@
 import React from "react";
 
+const LOGO_URL = "https://res.cloudinary.com/dwsl2ktt2/image/upload/v1778750984/logo-afcfta-policy-network_oyf0rb.png";
+
 const Header = () => {
   return (
     <>
@@ -49,20 +51,16 @@ const Header = () => {
       </div>
 
       {/* Logo and Contact Section */}
-      <div className="bg-white py-4 border-b border-gray-100">
+      <div className="bg-white py-3 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
             {/* Logo */}
-            <div className="flex items-center gap-3 cursor-pointer">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-amber-500 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-amber-500 font-bold text-lg tracking-wide">AfCFTA</h1>
-                <p className="text-amber-600 text-xs font-medium tracking-wider">POLICY NETWORK</p>
-              </div>
+            <div className="cursor-pointer flex-shrink-0">
+              <img
+                src={LOGO_URL}
+                alt="AfCFTA Policy Network"
+                className="h-16 w-auto object-contain"
+              />
             </div>
 
             {/* Contact Info */}
